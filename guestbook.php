@@ -16,9 +16,8 @@
 <?php
     if(isset($_POST['note']))
     {
-       // Substitute your login in place of "yourLogin"
        $fp = fopen("yourLogin.txt","a");
-       fputs($fp,nl2br($_POST['note']).'<br>');
+       fputs($fp,nl2br($_POST['note']).'</br>');
        fclose($fp);
     }
 ?>
