@@ -1,13 +1,18 @@
 <html>
  <head>
-  <h1>Shopping Page</h1>
+  <title>Shopping Page</title>
  </head>
  <body>
-  Select the qty of widgets you require
   <form  action="size.php" method="post">
-  <input type="text" name="txtqty"/>
-  <input type=”text” name=”txtprice” size="10" value="15.75" readonly />
-  <input type="submit"/>
-  </form>
+   Select the qty of widgets you require
+   <select name="selqty">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+   </select>
+   <br/><br/>	
+   <input type="submit" value="Buy"/>
  </body>
 </html>
