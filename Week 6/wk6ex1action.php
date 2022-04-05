@@ -2,12 +2,12 @@
 	// Connect to server and select database
 	$link= mysqli_connect('localhost', '22015094', 'mysqluser', 'db1_22015094');
 	// Execute sql statement	
-	$sql = "INSERT INTO test (name,email,phone_number) ";
+    $sql = $sql . " values ('$_POST[txtName]','$_POST[txtEmail]','$_POST[txtPhoneNumber]')";
 
     $sql = "SELECT * from test";
 	
 	// Execute sql statement
-    $sql = $sql . " values ('$_POST[txtName]','$_POST[txtEmail]','$_POST[txtPhoneNumber]')";
+	$sql = "INSERT INTO test (name,email,phone_number) ";    
 
 	$result = mysqli_query($link, "SELECT * FROM test");
 
