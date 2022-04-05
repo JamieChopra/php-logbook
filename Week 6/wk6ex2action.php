@@ -24,4 +24,7 @@
 	</br>
 	<input type=submit name=btnsubmit value="save"/>
 </form>
+<form action="wk6ex2delete.php?id=<?php echo $_GET[id]; ?>" method="post">
+	<input type=submit name=btnsubmit value="Delete"/>
+</form>
 </body>
