@@ -5,6 +5,7 @@
 	Select the colour for the
   <input type="hidden" name="hdqty" value="<?php echo $_POST['txtqty'] ?>"/> 
   widgets you are ordering
+  <?php $totalprice= hdqty * txtprice)?>
    	<select name="selcolour">
    	  <option>white</option>
 	  <option>red</option>
