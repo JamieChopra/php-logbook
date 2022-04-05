@@ -11,10 +11,10 @@
 ?>
 <html>
 <body>
-<form action=" " method="post">
+<form action="wk6ex2save.php?id=<?php echo $_GET[id];?>" method="post">
 
 	Name :
-	<input type=text name=txtname value="<?php echo $row[name] ?>" readonly />
+	<input type=text name=txtname value="<?php echo $row[name] ?>" />
 	</br>
 	Phone number :
 	<input type=text name=txttelno value="<?php echo $row[phone_number]?>" />
