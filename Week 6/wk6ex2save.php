@@ -9,14 +9,11 @@
            WHERE ID = '{$_GET["id"]}';";
 
 
-	//$sql = "SELECT * FROM test WHERE ID = '$_GET["id"]' ";
 	//Execute query
 	$result = $mysqli->query($sql);
 
-    echo $sql;
-
     if ($result)
     {
-        echo "You have successfully saved the new data!";
+        header('Location: wk6ex2.php');
     }
 ?>
