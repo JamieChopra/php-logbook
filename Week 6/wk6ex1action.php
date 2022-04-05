@@ -4,13 +4,13 @@
 
 	// Connect to server and select database
 	$link= mysqli_connect('localhost', '22015094', 'mysqluser', 'db1_22015094');
-	// Execute sql statement
-	$result = mysqli_query($link, "SELECT * FROM test");		
+	// Execute sql statement	
 	
     $sql = "SELECT * from test";
+    
+	$result = mysqli_query($link, "SELECT * FROM test");
 	
 	// Execute sql statement
-	$result = mysqli_query($link, "SELECT * FROM test");
 
 	while ($row = mysqli_fetch_assoc($result))
 	{
