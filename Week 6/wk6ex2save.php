@@ -8,9 +8,12 @@
            phone_number= '{$_POST["txttelno"]}' 
            WHERE ID = '{$_GET["id"]}';";
 
-	$sql = "SELECT * FROM test WHERE ID = '$_GET["id"]' ";
+
+	//$sql = "SELECT * FROM test WHERE ID = '$_GET["id"]' ";
 	//Execute query
 	$result = mysqli_query($link, "SELECT * FROM test WHERE ID = '$_GET[id]' ");
+
+    echo $sql
 
     if ($result)
     {
