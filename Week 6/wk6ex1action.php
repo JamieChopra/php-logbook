@@ -6,7 +6,7 @@
 	
 	// Execute sql statement		
 	$sql = "SELECT * from test";
-	$link= mysqli_connect('intweb.bucks.ac.uk', '22015094', 'mysql', 'db1_22015094')
+	$link= mysqli_connect('localhost', '22015094', 'mysqluser', 'db1_22015094')
 	// Execute sql statement
 	$result = mysqli_query($link, “SELECT * FROM test”);
 
