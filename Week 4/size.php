@@ -4,7 +4,7 @@
  </head>
  <body>
   <form  action="selectcolour.php" method="post">
-  <input type="hidden" name = "selqty" value = "<?php echo $_POST["selqty"] ?>"/>
+  <input type="hidden" name = "hdqty" value = "<?php echo $_POST["selqty"] ?>"/>
    Size of widgets
    <select name = "Size">
        <option>Small</option>
