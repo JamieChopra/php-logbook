@@ -3,8 +3,8 @@
     <body>
       <form action="confirmation.php"  method="post">
 	Select the colour for the
+  <input type="hidden" name = "trueprice" value = "<?php echo $_POST["Size"] ?>"/>
   <input type="hidden" name="hdqty" value="<?php echo $_POST['txtqty'] ?>"/> 
-  <input type="hidden" name="hdprice" value="<?php echo $_POST['txtprice'] ?>"/> 
   widgets you are ordering
    	<select name="selcolour">
    	  <option>white</option>
