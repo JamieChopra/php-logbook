@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-	echo gmdate(“z”);
+	echo gmdate("z");
 ?>
 </body>
 </html>
