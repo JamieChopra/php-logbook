@@ -11,7 +11,7 @@
 ?>
 <html>
 <body>
-<form action="wk6ex2save.php?id=<?php echo $_GET[id];?>" method="post">
+<form action="wk6ex2save.php?id=<?php echo $_GET[id]; ?>" method="post">
 
 	Name :
 	<input type=text name=txtname value="<?php echo $row[name] ?>" />
