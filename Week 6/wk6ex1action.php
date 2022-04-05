@@ -3,12 +3,14 @@
 	$sql = $sql . " values ('$_POST[txtName]','$_POST[txtEmail]','$_POST[txtPhoneNumber]’)";
 
 	// Connect to server and select database
-	
-	// Execute sql statement		
-	$sql = "SELECT * from test";
-	$link= mysqli_connect('localhost', '22015094', 'mysqluser', 'db1_22015094')
+	$link= mysqli_connect('localhost', '22015094', 'mysqluser', 'db1_22015094');
 	// Execute sql statement
-	$result = mysqli_query($link, $sql);
+	$result = mysqli_query($link, "SELECT * FROM test");		
+	
+    $sql = "SELECT * from test";
+	
+	// Execute sql statement
+	$result = mysqli_query($link, "SELECT * FROM test");
 
 	while ($row = mysqli_fetch_assoc($result))
 	{
