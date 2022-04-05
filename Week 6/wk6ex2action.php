@@ -5,7 +5,7 @@
 
 	$sql = "SELECT * FROM test WHERE ID = '$_GET[ID]' ";
 	//Execute query
-	$result = mysqli_query($link, "SELECT * FROM test");
+	$result = $mysqli->query($sql);
 
 	$row = mysqli_fetch_assoc($result);
 ?>
