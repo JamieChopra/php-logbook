@@ -4,8 +4,9 @@
     $link= mysqli_connect('localhost', '22015094', 'mysqluser', 'db1_22015094');
 
 	$sql = "SELECT * from test where ID = '$_GET[id]' ";
+    
 	//Execute query
-	$result = mysqli_query($link, "SELECT * FROM test");
+	$result = $mysqli->query($sql);
 
 	$row = mysqli_fetch_assoc($result);
 ?>
