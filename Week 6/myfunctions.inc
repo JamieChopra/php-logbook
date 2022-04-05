@@ -17,7 +17,8 @@ function html_h2($text)
 
 function calculatetax($salary, $rate=40)
 {
-	$tax = ($salary * ($rate/100));
+    $taxallowance = 12000;
+	$tax = (($salary - $taxallowance)* ($rate/100));
 	return $tax;
 }
 
