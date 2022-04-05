@@ -3,12 +3,10 @@
 	$sql = $sql . " values ('$_POST[txtName]','$_POST[txtEmail]','$_POST[txtPhoneNumber]’)";
 
 	// Connect to server and select database
-	$link= mysqli_connect('intweb.bucks.ac.uk', '22015094', 'mysql', 'db1_22015094')
-	// Execute sql statement		
-    $result = mysqli_query($link, “SELECT * FROM test”);
-
-	$sql = "SELECT * from test";
 	
+	// Execute sql statement		
+	$sql = "SELECT * from test";
+	$link= mysqli_connect('intweb.bucks.ac.uk', '22015094', 'mysql', 'db1_22015094')
 	// Execute sql statement
 	$result = mysqli_query($link, “SELECT * FROM test”);
 
